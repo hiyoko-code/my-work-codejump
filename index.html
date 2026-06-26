@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="テキストテキストテキストテキストテキスト">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Work - Portfolio</title>
+
+    <link rel="icon" href="img/favicon.ico">
+
+    <!--リセットcss-->
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <!--オリジナルcss-->
+    <link rel="stylesheet" href="css/sytle.css">
+</head>
+<body>
+  <!--ヘッダー-->
+    <header>
+        <div class="wrapper">
+          <div class="header-flex">
+            <h1 class="header-logo">
+                <a href="index.html"><img src="img/logo.svg" alt="ロゴ" width="120" height="36"></a>
+            </h1>
+
+            <nav>
+              <ul class="header-nav">
+                <li><a href="#about">About</a></li> 
+                <li><a href="#works">Works</a></li> 
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener"><img class="instagram-icon" src="img/icon-instagram.png" alt="インスタアイコン" width="504" height="504"></a></li>
+              </ul>
+            </nav>
+
+          </div>
+        </div>
+    </header>
+
+    <main>
+    <!--メインビジュアル--> 
+    <div class="mainvisual">
+      <picture>
+        <source media="(max-width: 600px)" srcset="img/mainvisual-sp.jpg" width="640" height="760">
+        <img src="img/mainvisual-pc.jpg" alt="メインビジュアル" width="1920" height="420">
+      </picture>
+    </div>
+    
+    <!--aboutセクション-->
+    <section id="about">
+      <div class="wrapper">
+        <h2 class="section-title">About</h2>
+
+        <dl class="about-list">
+          <dt>name:</dt>
+          <dd>Xxxxx Ashley</dd>
+          <dt>address:</dt>
+          <dd>2th Floor xxxxx Building x-x-x Nishiazabu, Minato-ku, Tokyo   106-0031 Japan</dd>
+          <dt>tel:</dt>
+          <dd>000-0000-0000</dd>
+          <dt>url:</dt>
+          <dd>www.xxxxxx.jp</dd>
+          <dt>mail:</dt>
+          <dd>xxx@xxxxxx.jp</dd>
+        </dl>
+
+        <h3 class="profile">プロフィール</h3>
+        <p>テキストテキストテキストテキストテキストテキストテキストテキストテキストスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+
+      </div>
+    </section>
+
+    <!--workセクション-->
+    <section id="works">
+      <div class="wrapper">
+        <h2 class="section-title">Works</h2>
+
+          <ul class="gallery-list">
+            <li><img src="img/works1.jpg" alt="写真1" width="640" height="417"></li>
+            <li><img src="img/works2.jpg" alt="写真2" width="640" height="417"></li>
+            <li><img src="img/works3.jpg" alt="写真3" width="640" height="417"></li>
+            <li><img src="img/works4.jpg" alt="写真4" width="640" height="417"></li>
+            <li><img src="img/works5.jpg" alt="写真5" width="640" height="417"></li>
+            <li><img src="img/works6.jpg" alt="写真6" width="640" height="417"></li>
+          </ul>
+      </div>
+    </section>
+
+    <!--newsセクション-->
+    <section id="news">
+      <div class="wrapper">
+        <h2 class="section-title">News</h2>
+        
+          <dl class="news-list">
+            <dt>2020.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.11』に掲載していただきました。</dd>
+            <dt>2020.XX.XX</dt>
+            <dd>ＸＸ月ＸＸ日から写真集「ＸＸＸＸＸＸＸ」の販売を開始します。</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>【イベント開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>デザイン雑誌「ＸＸＸＸＸＸ Vol.10』に掲載していただきました。</dd>
+            <dt>2019.XX.XX</dt>
+            <dd>【個展開催のお知らせ】テキストテキストテキストテキストテキストテキストテキスト</dd>
+          </dl>
+      </div>
+    </section>
+
+    <!--contactセクション-->
+    <section id="contact">
+      <div class="wrapper">
+        <h2 class="section-title">Contact</h2>
+
+        <form action="#" method="post">
+          <dl class="form-list">
+            <dt><label for="name">NAME</label></dt>
+            <dd><input type="text" id="name" name="your-name"></dd>
+            <dt><label for="email">E-mail</label></dt>
+            <dd><input type="text" id="email" name="your-email"></dd>
+            <dt><label for="massage">MESSAGE</label></dt>
+            <dd><textarea name="your-message" id="massage"></textarea></dd>
+          </dl>
+        
+         <div class="btn">
+           <input type="submit" value="送信">
+         </div>
+        </form>
+      </div>
+    </section>
+    </main>
+    
+    <!--フッター-->
+    <footer class="footer">
+      <p>© 2020 My Work</p>
+    </footer>
+    
+</body>
+</html>

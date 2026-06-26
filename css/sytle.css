@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+* {
+    box-sizing: border-box;
+}
+html {
+    font-size: 100%;
+}
+body {
+    color: #24292E;
+    font-size: 14.4px;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #24292E;
+}
+.wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+.section-title {
+    margin-bottom: 60px;
+    text-align: center;
+    font-size: 24px;
+}
+
+@media (max-width: 600px) {
+  .section-title {
+    margin-bottom: 40px;
+  }
+}
+
+/*ヘッダー*/
+header {
+    margin: 130px 0;
+}
+header .header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .header-logo img{
+    display:block;
+}
+header .header-logo a {
+    display:block;
+}
+header .header-nav {
+    display:flex;
+    gap: 20px;
+}
+header .header-nav a {
+    display:block;
+    padding: 10px 0;
+}
+header .header-nav .instagram-icon {
+    width: 20px;
+}
+header .header-nav li a:hover {
+  opacity: 0.7;
+}
+
+@media (max-width: 600px) {
+    header {
+        margin: 40px 0 0 0;
+    }
+    header .header-flex {
+        flex-direction: column;
+    }
+    header .header-nav {
+        gap: 18px;
+    }
+    header .header-nav li {
+        font-size: 13px;
+    }
+}
+/*メインビジュアル*/
+.mainvisual {
+   max-width: 1920px;
+   margin: 0 auto;
+   margin-bottom: 80px; 
+}
+.mainvisual img{
+    height: 420px;
+    width: 100%;
+    object-fit: cover;
+    display: block;  
+}
+
+/*aboutセクション*/
+#about {
+    margin-bottom: 130px;
+}
+#about .about-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    border-top: 1px solid #C8C8C8;
+}
+#about .about-list dt {
+    width: 10%;
+    padding: 15px;
+    border-bottom: 1px solid #C8C8C8;
+    font-weight: bold;
+}
+#about .about-list dd {
+    width: 90%;
+    padding: 15px;
+    border-bottom: 1px solid #C8C8C8;
+}
+#about .profile {
+    text-align: center;
+    margin-bottom: 10px;
+}
+#about p {
+    line-height: 1.8;
+}
+@media (max-width: 600px) {
+    #about {
+        margin-bottom: 80px;
+    }
+    #about .about-list {
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    #about .about-list dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    #about .about-list dd {
+        width: 100%;
+        padding-top: 0;
+    }
+    #about p {
+        padding: 0 20px;
+    }
+}
+ 
+
+/*worksセクション*/
+#works {
+    margin-bottom: 130px;
+}
+#works .gallery-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#works .gallery-list li {
+    width: calc((100% - 60px) / 3);
+}
+#works .gallery-list img {
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    #works {
+        margin-bottom: 80px;
+    }
+    #works .gallery-list {
+        flex-direction: column;
+    }
+    #works .gallery-list li {
+        width: 100%;
+    }
+}
+
+/*newsセクション*/
+#news {
+    margin-bottom: 130px;
+}
+#news .news-list {
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 1px solid #C8C8C8;
+}
+#news .news-list dt {
+    width: 20%;
+    padding: 15px;
+    border-bottom: 1px solid #C8C8C8;
+}
+#news .news-list dd {
+    width: 80%;
+    padding: 15px;
+    border-bottom: 1px solid #C8C8C8;
+}
+
+@media (max-width: 600px) {
+    #news {
+        margin-bottom: 80px;
+    }
+    #news .news-list {
+        flex-direction: column;
+    }
+    #news .news-list dt {
+        width: 100%;
+        border-bottom: none;
+        padding-bottom: 0;
+    }
+    #news .news-list dd {
+        width: 100%;
+        padding-top: 0;
+     }
+}
+
+/*contactセクション*/
+#contact {
+    margin-bottom: 130px;
+}
+#contact .form-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+#contact .form-list dt {
+    width: 15%;
+}
+#contact .form-list dd {
+    width: 85%;
+    margin-bottom: 10px;
+}
+#contact dd input,
+#contact dd textarea  {
+    border: 1px solid #C8C8C8;
+    width: 100%;
+    padding: 10px;
+}
+#contact textarea {
+    height: 10rem;
+}
+#contact .btn {
+    text-align: center;
+}
+#contact .btn input {
+    width: 200px;
+    padding: 15px 0;
+    background-color: #24292e;
+    color: #fff;
+    border: 1px solid #24292e;
+}
+#contact .btn input:hover {
+    background-color: #fff;
+    color: #24292e;
+}
+
+@media (max-width: 600px) {
+    #contact {
+        margin-bottom: 80px;
+    }
+    #contact .form-list {
+        flex-direction: column;
+    }
+    #contact .form-list dt,
+    #contact .form-list dd {
+        width: 100%;
+    }
+}
+/*フッター*/
+.footer {
+    padding: 10px 0;
+    background-color: #24292E;
+}
+.footer p {
+    text-align: center;
+    font-size: 8px;
+    color: #ffffff;
+}
